@@ -7,6 +7,7 @@ const favoritos = ref([]);
 const bool = ref(true);
 
 function api() {
+  //manera de sergio, la otra no funciona?
   axios.get("https://jsonplaceholder.typicode.com/posts").then((response) => {
     posts.value = response.data;
   });

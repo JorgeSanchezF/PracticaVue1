@@ -13,6 +13,7 @@ const usuarios = ref([]);
 const router = useRouter();
 
 function api() {
+  //manera de sergio, la otra no funciona?
   axios.get("https://jsonplaceholder.typicode.com/users").then((response) => {
     usuarios.value = response.data;
   });
